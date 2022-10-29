@@ -6,4 +6,23 @@
     <RootNamespace>SolidWithC_Sharp</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="SOLID-Advantages.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SOLID-Advantages.text</DependentUpon>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="SOLID-Advantages.text">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SOLID-Advantages.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
 </Project>
